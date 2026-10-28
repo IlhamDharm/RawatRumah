@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-highest": "#dae2fd", "outline-variant": "#c2c6d6", "secondary-fixed-dim": "#bcc7de", "on-tertiary": "#ffffff", "surface-tint": "#005ac2", "primary-fixed-dim": "#adc6ff", "error": "#ba1a1a", "on-surface-variant": "#424754", "on-secondary-fixed-variant": "#3c475a", "primary-container": "#2170e4", "primary-fixed": "#d8e2ff", "on-tertiary-container": "#f5fff6", "surface-container": "#eaedff", "tertiary-container": "#00855b", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "outline": "#727785", "surface-container-high": "#e2e7ff", "on-background": "#131b2e", "on-surface": "#131b2e", "primary": "#0058be", "on-error": "#ffffff", "on-primary-fixed": "#001a42", "surface-bright": "#faf8ff", "tertiary-fixed-dim": "#4edea3", "tertiary-fixed": "#6ffbbe", "on-tertiary-fixed": "#002113", "secondary": "#545f73", "on-secondary-fixed": "#111c2d", "secondary-fixed": "#d8e3fb", "error-container": "#ffdad6", "tertiary": "#006947", "background": "#faf8ff", "surface-variant": "#dae2fd", "inverse-on-surface": "#eef0ff", "on-primary": "#ffffff", "secondary-container": "#d5e0f8", "on-tertiary-fixed-variant": "#005236", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#004395", "on-primary-container": "#fefcff", "inverse-surface": "#283044", "surface-dim": "#d2d9f4", "inverse-primary": "#adc6ff", "on-secondary-container": "#586377", "surface": "#faf8ff", "surface-container-low": "#f2f3ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "2rem", "space-md": "1rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-lg": ["Inter"], "label-xs": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "headline-xl": ["Inter"], "headline-xl-mobile": ["Inter"], "body-sm": ["Inter"], "headline-lg-mobile": ["Inter"], "label-sm": ["Inter"] }, "fontSize": { "headline-lg": ["24px", {"lineHeight": "32px", "fontWeight": "600"}], "label-xs": ["11px", {"lineHeight": "14px", "fontWeight": "600"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "500"}], "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}], "headline-md": ["18px", {"lineHeight": "26px", "fontWeight": "600"}], "headline-xl": ["30px", {"lineHeight": "38px", "fontWeight": "700"}], "headline-xl-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "headline-lg-mobile": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant/20"><img alt="RawatRumah Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VlrX6SOOr482F7rJYNslBw4V1zKVQNTq7nV-XXznm2efJYC_1598apGs18TQ-LauLNUfXeExqBXSTlCCYLsTSppjXkhtudMGNBjhy9Rym7a1J6_VY8jO46eo0E-emY2BZSDPsQCdHhOjrdpQloRrdnmlbDXinxlCdFgO0amwf3jV652Gg_xh-xoFWjWUQJHItR0pA_5dSLPY45u7Gma1RCvJJ7i2t5UvN9UMcdBe0"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">RawatRumah</span></div><nav class="flex flex-col gap-space-xs px-space-md py-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dashboard-rawatrumah" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="daftar-barang-rumah-rawatrumah" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-label-md text-label-md">Barang Rumah</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary-container font-headline-sm" data-path="jadwal-perawatan-rawatrumah" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="font-label-md text-label-md">Jadwal Perawatan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="riwayat-perawatan-rawatrumah" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-label-md text-label-md">Riwayat Perawatan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="biaya-perawatan-rawatrumah" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span class="font-label-md text-label-md">Biaya Perawatan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="pengaturan-rawatrumah" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-md text-label-md">Pengaturan</span></a></nav></div><div class="p-space-md border-t border-outline-variant/20"><div class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container transition-colors"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj6tY8XV-PfQuubVwNKa_dNE00hkTPE8wz1Q_o-WcZ15znDoA4QeWplKUrD0ZLqswbdu4BnL4h_hUDv5a9TPkj4lAu2f5aPkAnpir5e3innsc6RUYYWnqNkRiMeMzxNmcqBAcyUd7xuYRTHZlofPpDV9DwIadR-hJNuMH9DRJn-I4VeZ-xWZexCa2zxIVQ5VNZHEDMvLUUj8y6q6meJKfBIf00TG_BsVL_CLTfAwI"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-tertiary-container ring-2 ring-surface-container-lowest"></span></div><div class="min-w-0 flex-1"><p class="font-label-md text-label-md text-on-surface truncate">Budi Santoso</p><p class="font-body-sm text-body-sm text-on-surface-variant truncate">budi.santoso@email.com</p></div></div><button class="flex-shrink-0 text-on-surface-variant hover:text-error transition-colors p-space-xs" title="Keluar atau Opsi" type="button"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/20 z-40 px-space-xl flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex items-center gap-space-sm"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-[18px] text-outline pointer-events-none">search</span><input class="w-80 h-10 pl-10 pr-space-md bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline border border-outline-variant/30 focus:outline-none focus:border-primary focus:bg-surface-container-lowest transition-all" placeholder="Cari barang, jadwal, teknisi..." type="text"/></div></div><div class="flex items-center gap-space-lg"><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" title="Pemberitahuan" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-0 right-0 w-4 h-4 bg-error text-on-error rounded-full font-label-xs text-label-xs flex items-center justify-center">3</span></button><div class="flex items-center gap-space-sm pl-space-md border-l border-outline-variant/30"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj6tY8XV-PfQuubVwNKa_dNE00hkTPE8wz1Q_o-WcZ15znDoA4QeWplKUrD0ZLqswbdu4BnL4h_hUDv5a9TPkj4lAu2f5aPkAnpir5e3innsc6RUYYWnqNkRiMeMzxNmcqBAcyUd7xuYRTHZlofPpDV9DwIadR-hJNuMH9DRJn-I4VeZ-xWZexCa2zxIVQ5VNZHEDMvLUUj8y6q6meJKfBIf00TG_BsVL_CLTfAwI"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-tertiary-container ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface">Budi Santoso</span><span class="font-label-xs text-label-xs text-tertiary flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>Online</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div></div></header><main class="w-full pt-16 min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Notification Toast (Hidden by default, triggered via JS) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-sm px-space-md py-space-sm rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl" id="toastNotification">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-inverse-on-surface">Pembaruan Berhasil</span>
+<span class="font-body-sm text-body-sm text-surface-variant" id="toastMessage">Jadwal servis berhasil diperbarui.</span>
+</div>
+<button class="ml-space-md text-surface-variant hover:text-inverse-on-surface" onclick="hideToast()">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="px-space-xl py-space-lg flex flex-col gap-space-xl">
+<!-- Header Section with Breadcrumbs & Action Buttons -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs font-label-xs text-label-xs text-secondary">
+<span>Manajemen Aset</span>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+<span class="text-primary font-semibold">Penjadwalan</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Jadwal Perawatan</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Atur dan pantau agenda pemeliharaan preventif seluruh peralatan rumah secara berkala.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="h-10 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors flex items-center gap-space-xs font-label-md text-label-md shadow-sm" onclick="triggerSync()">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Ekspor &amp; Sinkron</span>
+</button>
+<button class="h-10 px-space-md rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md flex items-center gap-space-xs shadow-sm transition-all" onclick="openModal()">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ Tambah Jadwal</span>
+</button>
+</div>
+</div>
+<!-- 4 KPI Summary Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Terjadwal -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Terjadwal</span>
+<div class="w-9 h-9 rounded-full bg-secondary-container/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">event</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-on-surface">7</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Agenda aktif</span>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs font-label-xs text-label-xs text-primary">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+<span>Bulan ini &amp; bulan depan</span>
+</div>
+</div>
+<!-- Segera Servis -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Segera Servis</span>
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-on-surface">3</span>
+<span class="font-label-xs text-label-xs px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-semibold">Prioritas</span>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs font-label-xs text-label-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span>Jatuh tempo &lt; 7 hari</span>
+</div>
+</div>
+<!-- Terlambat -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-error">Terlambat</span>
+<div class="w-9 h-9 rounded-full bg-error-container/60 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">error_outline</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-error">2</span>
+<span class="font-label-xs text-label-xs px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-semibold">Tindakan</span>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs font-label-xs text-label-xs text-error">
+<span class="material-symbols-outlined text-[14px]">alarm_off</span>
+<span>Perlu penanganan segera</span>
+</div>
+</div>
+<!-- Selesai Bulan Ini -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary">Selesai Bulan Ini</span>
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-on-surface">5</span>
+<span class="font-body-sm text-body-sm text-tertiary font-semibold">+100% On-time</span>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs font-label-xs text-label-xs text-tertiary">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>Sesuai anggaran Rp 1.250.000</span>
+</div>
+</div>
+</div>
+<!-- Filter Bar, View Switcher & Search -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- View Mode Buttons (Calendar vs List) -->
+<div class="flex items-center p-1 bg-surface-container-low rounded-lg self-start">
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-md font-label-md text-label-md transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold" id="viewBtnCalendar" onclick="switchView('calendar')">
+<span class="material-symbols-outlined text-[18px]">calendar_view_month</span>
+<span>Kalender Bulanan</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-md font-label-md text-label-md transition-all text-secondary hover:text-on-surface" id="viewBtnList" onclick="switchView('list')">
+<span class="material-symbols-outlined text-[18px]">format_list_bulleted</span>
+<span>Tampilan Daftar</span>
+</button>
+</div>
+<!-- Filters & Search Form -->
+<div class="flex flex-wrap items-center gap-space-sm flex-1 lg:justify-end">
+<!-- Search bar inside filter -->
+<div class="relative min-w-[200px] flex-1 sm:max-w-xs">
+<span class="material-symbols-outlined absolute left-space-sm top-2.5 text-[18px] text-outline pointer-events-none">search</span>
+<input class="w-full h-10 pl-9 pr-space-md bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all" id="searchInput" oninput="filterScheduleTable()" placeholder="Cari nama barang..." type="text"/>
+</div>
+<!-- Filter Kategori -->
+<div class="relative">
+<select class="h-10 px-space-md rounded-lg bg-surface-container-low font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer pr-8 appearance-none" id="categoryFilter" onchange="filterScheduleTable()">
+<option value="all">Semua Kategori</option>
+<option value="Elektronik">Elektronik</option>
+<option value="Sanitasi">Sanitasi &amp; Pipa</option>
+<option value="Kendaraan">Kendaraan</option>
+<option value="Struktur">Struktur Rumah</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+<!-- Filter Status -->
+<div class="relative">
+<select class="h-10 px-space-md rounded-lg bg-surface-container-low font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer pr-8 appearance-none" id="statusFilter" onchange="filterScheduleTable()">
+<option value="all">Semua Status</option>
+<option value="Terjadwal">Terjadwal</option>
+<option value="Segera">Segera Servis (&lt;7 hari)</option>
+<option value="Terlambat">Terlambat</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- SECTION A: CALENDAR VIEW (Default Active) -->
+<div class="flex flex-col gap-space-md" id="calendarViewSection">
+<!-- Calendar Navigation & Controls -->
+<div class="flex items-center justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<button class="p-space-xs rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<span class="font-headline-md text-headline-md text-on-surface min-w-[150px] text-center">November 2026</span>
+<button class="p-space-xs rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+<button class="px-space-md py-1 rounded-lg bg-surface-container-low text-primary font-label-md text-label-md hover:bg-surface-container transition-colors">
+            Hari Ini
+          </button>
+</div>
+<!-- Mini Legend -->
+<div class="hidden md:flex items-center gap-space-md">
+<div class="flex items-center gap-1.5 font-label-xs text-label-xs text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span>Terjadwal</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-xs text-label-xs text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span>Segera (&lt;7hr)</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-xs text-label-xs text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span>Terlambat</span>
+</div>
+</div>
+</div>
+<!-- Calendar Month Grid Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden p-space-md">
+<!-- Weekday Headers -->
+<div class="grid grid-cols-7 gap-space-xs text-center pb-space-sm font-label-sm text-label-sm text-secondary">
+<div>Sen</div>
+<div>Sel</div>
+<div>Rab</div>
+<div>Kam</div>
+<div>Jum</div>
+<div class="text-primary font-semibold">Sab</div>
+<div class="text-error font-semibold">Min</div>
+</div>
+<!-- Days Cells (Nov 2026: starts Sunday 1st, showing late Oct days) -->
+<div class="grid grid-cols-7 gap-space-xs">
+<!-- 26 Okt (Previous Month) -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low/40 flex flex-col justify-between opacity-50">
+<span class="font-label-sm text-label-sm text-secondary">26</span>
+</div>
+<!-- 27 Okt -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low/40 flex flex-col justify-between opacity-50">
+<span class="font-label-sm text-label-sm text-secondary">27</span>
+</div>
+<!-- 28 Okt -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low/40 flex flex-col justify-between opacity-50">
+<span class="font-label-sm text-label-sm text-secondary">28</span>
+</div>
+<!-- 29 Okt - Event Segera Servis AC -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low/40 flex flex-col justify-between group hover:bg-surface-container transition-all">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-secondary">29</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="p-1 rounded bg-surface-container text-on-surface text-left">
+<p class="font-label-xs text-label-xs truncate font-semibold">AC Kamar Utama</p>
+<p class="text-[10px] text-on-surface-variant truncate">Cuci evaporator</p>
+</div>
+</div>
+<!-- 30 Okt -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low/40 flex flex-col justify-between opacity-50">
+<span class="font-label-sm text-label-sm text-secondary">30</span>
+</div>
+<!-- 31 Okt -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low/40 flex flex-col justify-between opacity-50">
+<span class="font-label-sm text-label-sm text-secondary">31</span>
+</div>
+<!-- 1 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">1</span>
+</div>
+<!-- Week 2 -->
+<!-- 2 Nov - Mesin Cuci Terjadwal -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between group hover:bg-surface-container transition-all">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">2</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+<div class="p-1 rounded bg-secondary-container/60 text-on-surface text-left">
+<p class="font-label-xs text-label-xs truncate font-semibold">Mesin Cuci Front Load</p>
+<p class="text-[10px] text-on-surface-variant truncate">Pembersihan tabung drum</p>
+</div>
+</div>
+<!-- 3 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">3</span>
+</div>
+<!-- 4 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">4</span>
+</div>
+<!-- 5 Nov - Pompa Air Pendorong -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between group hover:bg-surface-container transition-all">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">5</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+<div class="p-1 rounded bg-secondary-container/60 text-on-surface text-left">
+<p class="font-label-xs text-label-xs truncate font-semibold">Pompa Booster Shimizu</p>
+<p class="text-[10px] text-on-surface-variant truncate">Cek membran &amp; pressure</p>
+</div>
+</div>
+<!-- 6 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">6</span>
+</div>
+<!-- 7 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">7</span>
+</div>
+<!-- 8 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">8</span>
+</div>
+<!-- Week 3 -->
+<!-- 9 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">9</span>
+</div>
+<!-- 10 Nov - Kulkas Terlambat -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between group hover:bg-surface-container transition-all">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-error font-semibold">10</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+</div>
+<div class="p-1 rounded bg-error-container/60 text-on-error-container text-left">
+<p class="font-label-xs text-label-xs truncate font-semibold">Kulkas 2 Pintu Sharp</p>
+<p class="text-[10px] text-error truncate font-medium">Overdue: Bersih kompresor</p>
+</div>
+</div>
+<!-- 11 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">11</span>
+</div>
+<!-- 12 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">12</span>
+</div>
+<!-- 13 Nov - Filter Air -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between group hover:bg-surface-container transition-all">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">13</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="p-1 rounded bg-surface-container text-on-surface text-left">
+<p class="font-label-xs text-label-xs truncate font-semibold">Filter Air Yamaha</p>
+<p class="text-[10px] text-on-surface-variant truncate">Ganti karbon aktif</p>
+</div>
+</div>
+<!-- 14 Nov (Hari Ini Indicator) -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-high flex flex-col justify-between relative shadow-sm">
+<div class="flex justify-between items-center">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary font-label-xs text-label-xs flex items-center justify-center font-bold">14</span>
+<span class="font-label-xs text-label-xs text-primary font-semibold">Hari Ini</span>
+</div>
+<div class="p-1 rounded bg-surface-container-lowest text-on-surface text-left shadow-xs">
+<p class="font-label-xs text-label-xs truncate font-bold text-primary">Water Heater Ariston</p>
+<p class="text-[10px] text-on-surface-variant truncate">Kuras tangki &amp; anoda</p>
+</div>
+</div>
+<!-- 15 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">15</span>
+</div>
+<!-- Week 4 -->
+<!-- 16 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">16</span>
+</div>
+<!-- 17 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">17</span>
+</div>
+<!-- 18 Nov - Ganti Oli Genset -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between group hover:bg-surface-container transition-all">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">18</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+<div class="p-1 rounded bg-secondary-container/60 text-on-surface text-left">
+<p class="font-label-xs text-label-xs truncate font-semibold">Genset Honda Silent</p>
+<p class="text-[10px] text-on-surface-variant truncate">Ganti oli mesin &amp; tes</p>
+</div>
+</div>
+<!-- 19 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">19</span>
+</div>
+<!-- 20 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">20</span>
+</div>
+<!-- 21 Nov - Servis Mobil -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between group hover:bg-surface-container transition-all">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">21</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+<div class="p-1 rounded bg-secondary-container/60 text-on-surface text-left">
+<p class="font-label-xs text-label-xs truncate font-semibold">Mobil Honda HR-V</p>
+<p class="text-[10px] text-on-surface-variant truncate">Rotasi ban &amp; balancing</p>
+</div>
+</div>
+<!-- 22 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">22</span>
+</div>
+<!-- Week 5 -->
+<!-- 23 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">23</span>
+</div>
+<!-- 24 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">24</span>
+</div>
+<!-- 25 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">25</span>
+</div>
+<!-- 26 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">26</span>
+</div>
+<!-- 27 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">27</span>
+</div>
+<!-- 28 Nov - Pengecekan Atap & Talang -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between group hover:bg-surface-container transition-all">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">28</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+<div class="p-1 rounded bg-secondary-container/60 text-on-surface text-left">
+<p class="font-label-xs text-label-xs truncate font-semibold">Talang &amp; Dak Beton</p>
+<p class="text-[10px] text-on-surface-variant truncate">Waterproofing &amp; daun</p>
+</div>
+</div>
+<!-- 29 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">29</span>
+</div>
+<!-- 30 Nov -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">30</span>
+</div>
+<!-- 1 Des (Next Month) -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low/40 flex flex-col justify-between opacity-50">
+<span class="font-label-sm text-label-sm text-secondary">1</span>
+</div>
+<!-- 2 Des -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low/40 flex flex-col justify-between opacity-50">
+<span class="font-label-sm text-label-sm text-secondary">2</span>
+</div>
+<!-- 3 Des -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low/40 flex flex-col justify-between opacity-50">
+<span class="font-label-sm text-label-sm text-secondary">3</span>
+</div>
+<!-- 4 Des -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low/40 flex flex-col justify-between opacity-50">
+<span class="font-label-sm text-label-sm text-secondary">4</span>
+</div>
+<!-- 5 Des -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low/40 flex flex-col justify-between opacity-50">
+<span class="font-label-sm text-label-sm text-secondary">5</span>
+</div>
+<!-- 6 Des -->
+<div class="min-h-[105px] p-space-xs rounded-lg bg-surface-container-low/40 flex flex-col justify-between opacity-50">
+<span class="font-label-sm text-label-sm text-secondary">6</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION B: LIST / TABLE VIEW (Detailed items) -->
+<div class="flex flex-col gap-space-md" id="listViewSection">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Daftar Jadwal Perawatan Lengkap</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Menampilkan status jatuh tempo, teknisi penanggung jawab, dan estimasi biaya.</p>
+</div>
+<div class="font-label-sm text-label-sm text-secondary">
+          Total: <span class="font-semibold text-on-surface" id="itemCountDisplay">6</span> Agenda Ditampilkan
+        </div>
+</div>
+<!-- Schedule Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md font-semibold">Barang &amp; Ruangan</th>
+<th class="py-space-sm px-space-md font-semibold">Perawatan &amp; Catatan</th>
+<th class="py-space-sm px-space-md font-semibold">Jatuh Tempo</th>
+<th class="py-space-sm px-space-md font-semibold">Teknisi / PIC</th>
+<th class="py-space-sm px-space-md font-semibold text-right">Estimasi Biaya</th>
+<th class="py-space-sm px-space-md font-semibold text-center">Status</th>
+<th class="py-space-sm px-space-md font-semibold text-right">Aksi</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface divide-y divide-outline-variant/10" id="scheduleTableBody">
+<!-- Item 1: Overdue -->
+<tr class="hover:bg-surface-container-low/50 transition-colors" data-category="Elektronik" data-status="Terlambat">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-lg object-cover bg-surface-container" data-alt="Close up photograph of a modern double door stainless steel refrigerator in a sleek kitchen with cool morning ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD86t9xrZ6uC32OklGu7E_QHmI1tcFtn8Nxr-jM-X8Qkg4NkpZPOAinqbSEB_NM0iad3rvDPkywgMWu1Li50LLvP-M9egrY0yKkayA1DO1jVaXp-XY5CNmg2wHmyq3ZDDo0DZscIZAEl55n3Y4KPMXSmdynrecmW_eXD4ZCHrokbJGM7LSqEBB9uu3etP7GuXsBDmcRcY4DVgDA7xR9gwAi_6nK641GlCPKzBR2r8"/>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Kulkas 2 Pintu Sharp</p>
+<p class="font-body-sm text-body-sm text-secondary">Dapur Utama • Elektronik</p>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<p class="font-label-md text-label-md text-on-surface">Pembersihan Kompresor &amp; Kumparan</p>
+<p class="font-body-sm text-body-sm text-outline">Kuras defroster dan vakum debu fan motor</p>
+</td>
+<td class="py-space-md px-space-md">
+<p class="font-label-md text-label-md text-error font-medium">10 Nov 2026</p>
+<span class="inline-flex items-center gap-1 font-label-xs text-label-xs text-error">
+<span class="material-symbols-outlined text-[12px]">schedule</span> Terlambat 4 Hari
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">engineering</span>
+<span class="font-body-sm text-body-sm text-on-surface">Service Center Sharp</span>
+</div>
+<span class="font-label-xs text-label-xs text-secondary">0812-9900-1122</span>
+</td>
+<td class="py-space-md px-space-md text-right font-label-md text-label-md font-semibold tabular-nums text-on-surface">
+                  Rp 220.000
+                </td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full font-label-xs text-label-xs bg-error-container text-on-error-container font-semibold">
+                    Terlambat
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-tertiary-container hover:text-on-tertiary-container text-tertiary flex items-center justify-center transition-colors" onclick="markAsCompleted('Kulkas 2 Pintu Sharp')" title="Tandai Selesai">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors" onclick="openModal('Kulkas 2 Pintu Sharp')" title="Ubah Jadwal">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 2: Segera (<7 hari) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors" data-category="Sanitasi" data-status="Segera">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-lg object-cover bg-surface-container" data-alt="Detail shot of modern luxury bathroom wall mounted water heater with chrome plumbing valves and clean tile background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9d6-QX4w5Vpf9ofx2Fq2mGwFhDCRQHEe0gUdIlVweItkX3V_scHwkAR68TLCqAAefax8YIIfqO-dFsjoBsn5o7KO8JYR8KN3kM7i-YrwoDB_fCpTqbJ0WxfyfdFWVkGQiXmz1Cl-qpAHjZ-RSJc-O6ClFTvmmsAE9uBgrZN3CEdy49-5TK9OHtpbTMD7FZfR10bAaq0IXvTHSnscjT4O1PDXzm_yy2SmaHTl--yo"/>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Water Heater Ariston 30L</p>
+<p class="font-body-sm text-body-sm text-secondary">Kamar Mandi 1 • Sanitasi</p>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<p class="font-label-md text-label-md text-on-surface">Kuras Tangki &amp; Cek Anoda Magnesium</p>
+<p class="font-body-sm text-body-sm text-outline">Interval 6 bulan untuk mencegah kerak kapur</p>
+</td>
+<td class="py-space-md px-space-md">
+<p class="font-label-md text-label-md text-on-surface font-semibold">14 Nov 2026</p>
+<span class="inline-flex items-center gap-1 font-label-xs text-label-xs text-primary font-semibold">
+<span class="material-symbols-outlined text-[12px]">today</span> Hari ini
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">person</span>
+<span class="font-body-sm text-body-sm text-on-surface">Pak Joko (Teknisi Langganan)</span>
+</div>
+<span class="font-label-xs text-label-xs text-secondary">0878-1122-3344</span>
+</td>
+<td class="py-space-md px-space-md text-right font-label-md text-label-md font-semibold tabular-nums text-on-surface">
+                  Rp 150.000
+                </td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full font-label-xs text-label-xs bg-surface-container text-on-surface-variant font-semibold">
+                    Segera Servis
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-tertiary-container hover:text-on-tertiary-container text-tertiary flex items-center justify-center transition-colors" onclick="markAsCompleted('Water Heater Ariston 30L')" title="Tandai Selesai">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors" onclick="openModal('Water Heater Ariston 30L')" title="Ubah Jadwal">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 3: Segera (<7 hari) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors" data-category="Sanitasi" data-status="Segera">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-lg object-cover bg-surface-container" data-alt="Water filtration system installed in a modern utility room with blue and white casing pipes and clean pressure gauges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrFHV8J8I_bo4BJ8hmAf8vD69qTY6Gms_FRuczpuu08CTONwDeoMN7vg6rgj41ZgeSQ40K6yIFH1RqZI44E6tWHPPd-Jz-zS8zSE9YllJNZ2_avNb6kUrm9RAh4iXgWQEh_XBAV00vV29qA5t348Bsq-a-1WZCGcg0wjCAGxAco2XlNMIBeYxin7bOsACFk_dFJVgpbAO7n13GPlj6FvNRoZmBSPEugUocpGf0LLg"/>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Filter Air Yamaha OH-300</p>
+<p class="font-body-sm text-body-sm text-secondary">Area Service • Sanitasi</p>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<p class="font-label-md text-label-md text-on-surface">Ganti Pasir Silika &amp; Karbon Aktif</p>
+<p class="font-body-sm text-body-sm text-outline">Backwash rutin &amp; penggantian media penyaring</p>
+</td>
+<td class="py-space-md px-space-md">
+<p class="font-label-md text-label-md text-on-surface font-medium">17 Nov 2026</p>
+<span class="inline-flex items-center gap-1 font-label-xs text-label-xs text-secondary">
+<span class="material-symbols-outlined text-[12px]">schedule</span> 3 Hari lagi
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">build</span>
+<span class="font-body-sm text-body-sm text-on-surface">Mandiri (DIY)</span>
+</div>
+<span class="font-label-xs text-label-xs text-secondary">Beli Cartridge Baru</span>
+</td>
+<td class="py-space-md px-space-md text-right font-label-md text-label-md font-semibold tabular-nums text-on-surface">
+                  Rp 350.000
+                </td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full font-label-xs text-label-xs bg-surface-container text-on-surface-variant font-semibold">
+                    Segera Servis
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-tertiary-container hover:text-on-tertiary-container text-tertiary flex items-center justify-center transition-colors" onclick="markAsCompleted('Filter Air Yamaha OH-300')" title="Tandai Selesai">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors" onclick="openModal('Filter Air Yamaha OH-300')" title="Ubah Jadwal">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 4: Terjadwal -->
+<tr class="hover:bg-surface-container-low/50 transition-colors" data-category="Elektronik" data-status="Terjadwal">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">power</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Genset Honda EU22i Silent</p>
+<p class="font-body-sm text-body-sm text-secondary">Garasi / Luar • Elektronik</p>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<p class="font-label-md text-label-md text-on-surface">Ganti Oli Mesin &amp; Uji Beban</p>
+<p class="font-body-sm text-body-sm text-outline">Interval berkala tiap 100 jam operasional</p>
+</td>
+<td class="py-space-md px-space-md">
+<p class="font-label-md text-label-md text-on-surface font-medium">18 Nov 2026</p>
+<span class="inline-flex items-center gap-1 font-label-xs text-label-xs text-secondary">
+<span class="material-symbols-outlined text-[12px]">schedule</span> 4 Hari lagi
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">engineering</span>
+<span class="font-body-sm text-body-sm text-on-surface">Bengkel Daya Prima</span>
+</div>
+<span class="font-label-xs text-label-xs text-secondary">0813-8822-9911</span>
+</td>
+<td class="py-space-md px-space-md text-right font-label-md text-label-md font-semibold tabular-nums text-on-surface">
+                  Rp 180.000
+                </td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full font-label-xs text-label-xs bg-secondary-container text-on-secondary-container font-semibold">
+                    Terjadwal
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-tertiary-container hover:text-on-tertiary-container text-tertiary flex items-center justify-center transition-colors" onclick="markAsCompleted('Genset Honda EU22i')" title="Tandai Selesai">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors" onclick="openModal('Genset Honda EU22i')" title="Ubah Jadwal">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 5: Terjadwal Mobil -->
+<tr class="hover:bg-surface-container-low/50 transition-colors" data-category="Kendaraan" data-status="Terjadwal">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">directions_car</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Mobil Honda HR-V 2022</p>
+<p class="font-body-sm text-body-sm text-secondary">Carport Depan • Kendaraan</p>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<p class="font-label-md text-label-md text-on-surface">Rotasi Ban &amp; Spooring Balancing</p>
+<p class="font-body-sm text-body-sm text-outline">Pemeriksaan kampas rem depan-belakang</p>
+</td>
+<td class="py-space-md px-space-md">
+<p class="font-label-md text-label-md text-on-surface font-medium">21 Nov 2026</p>
+<span class="inline-flex items-center gap-1 font-label-xs text-label-xs text-secondary">
+<span class="material-symbols-outlined text-[12px]">schedule</span> 7 Hari lagi
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">store</span>
+<span class="font-body-sm text-body-sm text-on-surface">Honda Megatama Bintaro</span>
+</div>
+<span class="font-label-xs text-label-xs text-secondary">Booking #SRV-901</span>
+</td>
+<td class="py-space-md px-space-md text-right font-label-md text-label-md font-semibold tabular-nums text-on-surface">
+                  Rp 450.000
+                </td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full font-label-xs text-label-xs bg-secondary-container text-on-secondary-container font-semibold">
+                    Terjadwal
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-tertiary-container hover:text-on-tertiary-container text-tertiary flex items-center justify-center transition-colors" onclick="markAsCompleted('Mobil Honda HR-V')" title="Tandai Selesai">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors" onclick="openModal('Mobil Honda HR-V')" title="Ubah Jadwal">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 6: Terjadwal Atap -->
+<tr class="hover:bg-surface-container-low/50 transition-colors" data-category="Struktur" data-status="Terjadwal">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">roofing</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Talang &amp; Dak Beton Atap</p>
+<p class="font-body-sm text-body-sm text-secondary">Rooftop Lt 2 • Struktur</p>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<p class="font-label-md text-label-md text-on-surface">Pembersihan Talang &amp; Cek Waterproofing</p>
+<p class="font-body-sm text-body-sm text-outline">Persiapan memasuki musim hujan lebat akhir tahun</p>
+</td>
+<td class="py-space-md px-space-md">
+<p class="font-label-md text-label-md text-on-surface font-medium">28 Nov 2026</p>
+<span class="inline-flex items-center gap-1 font-label-xs text-label-xs text-secondary">
+<span class="material-symbols-outlined text-[12px]">schedule</span> 14 Hari lagi
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">person</span>
+<span class="font-body-sm text-body-sm text-on-surface">Tukang Rohim &amp; Tim</span>
+</div>
+<span class="font-label-xs text-label-xs text-secondary">0857-4433-2211</span>
+</td>
+<td class="py-space-md px-space-md text-right font-label-md text-label-md font-semibold tabular-nums text-on-surface">
+                  Rp 300.000
+                </td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full font-label-xs text-label-xs bg-secondary-container text-on-secondary-container font-semibold">
+                    Terjadwal
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-tertiary-container hover:text-on-tertiary-container text-tertiary flex items-center justify-center transition-colors" onclick="markAsCompleted('Talang &amp; Dak Atap')" title="Tandai Selesai">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors" onclick="openModal('Talang &amp; Dak Atap')" title="Ubah Jadwal">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Quick Maintenance Tips Banner -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">lightbulb</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tips Perawatan Rumah Bulan November</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Memasuki intensitas hujan tinggi, prioritaskan servis saluran talang air dan periksa anoda water heater agar tidak berkarat.</p>
+</div>
+</div>
+<button class="h-10 px-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-md text-label-md whitespace-nowrap shadow-xs transition-colors" onclick="showToast('Panduan perawatan musim hujan siap diunduh.')">
+        Baca Panduan Perawatan
+      </button>
+</div>
+</div>
+<!-- MODAL / FORM DIALOG: + Tambah Jadwal Baru -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-inverse-surface/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" id="scheduleModal">
+<div class="bg-surface-container-lowest w-full max-w-xl rounded-xl shadow-xl overflow-hidden flex flex-col max-h-[921px] transition-transform duration-300 scale-95" id="modalBox">
+<!-- Modal Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="modalTitle">Tambah Jadwal Perawatan</h3>
+<p class="font-body-sm text-body-sm text-secondary">Pastikan peralatan diservis tepat waktu</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container flex items-center justify-center transition-colors" onclick="closeModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body (Form Fields) -->
+<form class="p-space-lg overflow-y-auto flex flex-col gap-space-md" id="scheduleForm" onsubmit="handleFormSubmit(event)">
+<!-- Barang Rumah Dropdown -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface">Pilih Barang Rumah <span class="text-error">*</span></label>
+<div class="relative">
+<select class="w-full h-10 px-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest cursor-pointer appearance-none" id="modalItemSelect" required="">
+<option disabled="" selected="" value="">Pilih unit peralatan...</option>
+<option value="AC Daikin Kamar Utama">AC Daikin 1 PK - Kamar Utama</option>
+<option value="AC LG Kamar Tamu">AC LG 1/2 PK - Kamar Tamu</option>
+<option value="Mesin Cuci Electrolux Front Load">Mesin Cuci Electrolux Front Load</option>
+<option value="Kulkas Sharp 2 Pintu">Kulkas Sharp 2 Pintu - Dapur</option>
+<option value="Water Heater Ariston 30L">Water Heater Ariston 30L - Kamar Mandi 1</option>
+<option value="Pompa Booster Shimizu">Pompa Booster Shimizu - Dak Atap</option>
+<option value="Filter Air Yamaha OH-300">Filter Air Yamaha OH-300</option>
+<option value="Mobil Honda HR-V 2022">Mobil Honda HR-V 2022</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Jenis Perawatan -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface">Jenis Perawatan &amp; Deskripsi Singkat <span class="text-error">*</span></label>
+<input class="w-full h-10 px-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest" id="modalTaskName" placeholder="Contoh: Cuci evaporator rutin &amp; cek tekanan freon" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Tanggal Pelaksanaan -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface">Tanggal Pelaksanaan <span class="text-error">*</span></label>
+<input class="w-full h-10 px-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest" id="modalDate" required="" type="date" value="2026-11-20"/>
+</div>
+<!-- Interval Pengulangan -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface">Interval Pengulangan</label>
+<div class="relative">
+<select class="w-full h-10 px-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest appearance-none" id="modalInterval">
+<option value="1">Setiap 1 Bulan</option>
+<option selected="" value="3">Setiap 3 Bulan</option>
+<option value="6">Setiap 6 Bulan</option>
+<option value="12">Setiap 1 Tahun (Tahunan)</option>
+<option value="0">Sekali Saja (Tanpa Pengulangan)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Estimasi Biaya -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface">Estimasi Biaya (Rp)</label>
+<div class="relative">
+<span class="absolute left-3 top-2.5 font-label-md text-label-md text-outline">Rp</span>
+<input class="w-full h-10 pl-10 pr-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest" id="modalCost" placeholder="150000" type="number"/>
+</div>
+</div>
+<!-- Pilihan Teknisi / DIY -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface">Penyedia Jasa / Teknisi</label>
+<input class="w-full h-10 px-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest" id="modalTechnician" placeholder="Contoh: Teknisi Langganan (Pak Joko)" type="text"/>
+</div>
+</div>
+<!-- Catatan Khusus -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface">Catatan Tambahan &amp; Riwayat Terakhir</label>
+<textarea class="w-full p-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest resize-none" id="modalNotes" placeholder="Tulis instruksi khusus seperti kode suku cadang atau garansi..." rows="2"></textarea>
+</div>
+<!-- Form Actions -->
+<div class="mt-space-sm flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="h-10 px-space-lg rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" onclick="closeModal()" type="button">
+            Batalkan
+          </button>
+<button class="h-10 px-space-lg rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md shadow-sm transition-all flex items-center gap-space-xs" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Simpan Jadwal</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<script>
+    // View Switcher logic (Calendar vs List)
+    function switchView(mode) {
+      const calSec = document.getElementById('calendarViewSection');
+      const listSec = document.getElementById('listViewSection');
+      const btnCal = document.getElementById('viewBtnCalendar');
+      const btnList = document.getElementById('viewBtnList');
+
+      if (mode === 'calendar') {
+        calSec.classList.remove('hidden');
+        listSec.classList.remove('hidden'); // keep both or toggle seamlessly
+        btnCal.className = 'flex items-center gap-space-xs px-space-md py-1.5 rounded-md font-label-md text-label-md transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold';
+        btnList.className = 'flex items-center gap-space-xs px-space-md py-1.5 rounded-md font-label-md text-label-md transition-all text-secondary hover:text-on-surface';
+        calSec.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        btnList.className = 'flex items-center gap-space-xs px-space-md py-1.5 rounded-md font-label-md text-label-md transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold';
+        btnCal.className = 'flex items-center gap-space-xs px-space-md py-1.5 rounded-md font-label-md text-label-md transition-all text-secondary hover:text-on-surface';
+        listSec.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Modal Control
+    function openModal(itemPrefill) {
+      const modal = document.getElementById('scheduleModal');
+      const box = document.getElementById('modalBox');
+      const title = document.getElementById('modalTitle');
+      const select = document.getElementById('modalItemSelect');
+
+      if (itemPrefill) {
+        title.innerText = 'Ubah Jadwal Perawatan';
+        // Check if value exists in select or set task name
+        document.getElementById('modalTaskName').value = 'Servis Berkala & Pemeriksaan Umum';
+      } else {
+        title.innerText = 'Tambah Jadwal Perawatan';
+        document.getElementById('scheduleForm').reset();
+      }
+
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      box.classList.remove('scale-95');
+      box.classList.add('scale-100');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('scheduleModal');
+      const box = document.getElementById('modalBox');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      box.classList.remove('scale-100');
+      box.classList.add('scale-95');
+    }
+
+    // Toast Notification Control
+    function showToast(message) {
+      const toast = document.getElementById('toastNotification');
+      const msg = document.getElementById('toastMessage');
+      if (message) msg.innerText = message;
+      toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        hideToast();
+      }, 3500);
+    }
+
+    function hideToast() {
+      const toast = document.getElementById('toastNotification');
+      toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }
+
+    // Quick Action: Tandai Selesai
+    function markAsCompleted(itemName) {
+      showToast('Status "' + itemName + '" berhasil ditandai selesai.');
+    }
+
+    function triggerSync() {
+      showToast('Sinkronisasi Google Calendar & iCal berhasil diproses.');
+    }
+
+    // Submit handler
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      closeModal();
+      showToast('Jadwal perawatan baru berhasil disimpan ke agenda.');
+    }
+
+    // Filter Logic for Table
+    function filterScheduleTable() {
+      const search = document.getElementById('searchInput').value.toLowerCase();
+      const cat = document.getElementById('categoryFilter').value;
+      const status = document.getElementById('statusFilter').value;
+      const rows = document.querySelectorAll('#scheduleTableBody tr');
+
+      let visibleCount = 0;
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        const rowCat = row.getAttribute('data-category');
+        const rowStatus = row.getAttribute('data-status');
+
+        const matchSearch = text.includes(search);
+        const matchCat = (cat === 'all' || rowCat === cat);
+        const matchStatus = (status === 'all' || rowStatus === status);
+
+        if (matchSearch && matchCat && matchStatus) {
+          row.style.display = '';
+          visibleCount++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      document.getElementById('itemCountDisplay').innerText = visibleCount;
+    }
+  </script>
+</div></main></div></body></html>
